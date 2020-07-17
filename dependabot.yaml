@@ -1,0 +1,14 @@
+versionm: 2
+updates: 
+  - package-ecosystem: docker
+    directory: "test_data/docker"
+    schedule:
+      interval: daily
+      time: "04:00"
+    open-pull-requests-limit: 40
+  - package-ecosystem: nuget
+    directory: "test_data/nuget"
+    schedule:
+      interval: daily
+      time: "04:00"
+    open-pull-requests-limit: 40
