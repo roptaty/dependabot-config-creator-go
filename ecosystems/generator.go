@@ -23,7 +23,7 @@ func (g *generator) writeBegin() {
 }
 
 func getDirectory(path string) string {
-	return filepath.Dir(path)
+	return strings.ReplaceAll(filepath.Dir(path), "\\", "/")
 }
 
 func (g *generator) writeEntry(ecosystem *Ecosystem, path string) {
